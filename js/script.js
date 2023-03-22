@@ -51,12 +51,13 @@ let cards = "";
 for (let i = 0; i < teamMembers.length; i++) {
     const curMember = teamMembers[i]
     cards += 
-    `<div class="col">
+    `<div class="col m-3">
+
 
         <div class="card" style="width: 18rem;">
         <img src="${curMember.image}" class="card-img-top">
             <div class="card-body">
-                <h5 class="card-title">${curMember.firstName},${curMember.surname}</h5>
+                <h5 class="card-title">${curMember.firstName} ${curMember.surname}</h5>
                 <p class="card-text">${curMember.title}</p>
             </div>
         </div>
